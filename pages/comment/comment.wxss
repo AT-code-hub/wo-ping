@@ -1,0 +1,53 @@
+/* pages/comment/comment.wxss */
+
+.wrapper {
+  padding: 20rpx 40rpx;
+}
+
+.wrapper .item-group {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wrapper .item-group image {
+  width: 80rpx;
+  height: 100rpx;
+  margin-right: 15rpx;
+}
+
+.wrapper .item-group .item-title {
+  font-size: 32rpx;
+  color: #3385ff;
+  margin-right: 10rpx;
+}
+
+.wrapper .item-group .item-score {
+  font-size: 30rpx;
+  color: #999;
+}
+
+.wrapper .score-title {
+  font-size: 35rpx;
+  margin-top: 60rpx;
+  margin-bottom: 40rpx;
+}
+
+.comment-wrapper {
+  /* display: flex; */
+}
+
+.btn-box {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 30rpx 0;
+}
+
+.btn-box button {
+  flex: 1;
+  background: #3385ff;
+  border: 1rpx solid #fff;
+  color: #fff;
+}

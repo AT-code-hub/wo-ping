@@ -1,0 +1,21 @@
+.item {
+  display: inline-block;
+  width: 200rpx;
+  margin-right: 20rpx;
+  height: 100%;
+}
+
+.item .item-img {
+  width: 200rpx;
+  height: 300rpx;
+}
+
+.item .title {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 32rpx;
+  margin: 15rpx 0;
+}

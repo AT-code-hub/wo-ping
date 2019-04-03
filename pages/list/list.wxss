@@ -1,0 +1,12 @@
+/* pages/list/list.wxss */
+
+.container {
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  padding: 30rpx 10rpx 0 30rpx;
+}
+
+.container w-itemview {
+  margin-top:25rpx;
+}

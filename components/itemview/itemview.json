@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "w-score": "/components/stars/index"
+  }
+}

@@ -1,0 +1,34 @@
+<view class="top-wrapper">
+  <text class="details-title">{{item.title}}</text>
+  <view class="details">
+    <view class="left-details">
+      <view class="details-rate">
+        <w-score rate="5" statsSize="35" fontSize="28" scoreColor="#595959"></w-score>
+        <text class="comment-persons">{{item.rating.count}}人评价</text>
+      </view>
+      <view class="del-sub-rate">
+        <view class="del-type">
+          {{item.durations}} {{genres}}
+        </view>
+        <view class="del-show">{{item.pubdate}} 上映 {{item.countries[0]}}</view>
+        <view class="del-actors"> {{authors}}</view>
+      </view>
+    </view>
+    <view class="right-details">
+      <image src="{{item.cover.image.normal.url}}"></image>
+    </view>
+  </view>
+</view>
+<view class="tags-wrapper">
+  <text class="tags-title">
+    常用标签
+  </text>
+  <view class="tags-list">
+    <text class="tags-item" wx:for="{{tagsList}}" wx:key="index">{{item}}</text>
+  </view>
+</view>
+<view class="comment-wrapper">
+  <view class="comment-title">短评（{{com.total}}）</view>
+  <w-comment comList="{{comList}}"></w-comment>
+</view>
+<navigator class="more-comment" url="/pages/comment/comment?type={{type}}&id={{id}}&imgUrl={{item.cover.image.normal.url}}&title={{item.title}}&score={{item.rating.value}}">查看更多评论</navigator>

@@ -1,0 +1,11 @@
+<view class="wrapper">
+  <view class="item-title">
+    <text>{{title}}</text>
+    <navigator class="more" url="{{moreUrl}}">
+      更多
+    </navigator>
+  </view>
+  <scroll-view class="item-scroll" scroll-x="true">
+    <w-itemview wx:for="{{items}}" wx:key="{{item.title}}" item="{{item}}" detailsUrl="/pages/details/details?type={{types}}&id={{item.id}}"></w-itemview>
+  </scroll-view>
+</view>

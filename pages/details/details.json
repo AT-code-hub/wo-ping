@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-score": "/components/stars/index",
+    "w-comment": "/components/comments/index"
+  }
+}

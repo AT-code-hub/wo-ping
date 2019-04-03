@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  margin-top: 25rpx;
+  padding: 0 25rpx;
+}
+
+.wrapper .item-title {
+  flex: 1;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 25rpx;
+}
+
+.wrapper .item-title text {
+  flex: 1;
+}
+
+.wrapper .item-title navigator {
+  color: #3385ff;
+}
+
+.wrapper .item-scroll {
+  width: 100%;
+  height: 440rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  white-space: nowrap;
+}

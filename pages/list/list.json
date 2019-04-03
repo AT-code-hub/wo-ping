@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-searchbar": "/components/search/index",
+    "w-itemview": "/components/itemview/itemview"
+  }
+}

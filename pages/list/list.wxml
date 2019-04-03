@@ -1,0 +1,6 @@
+<w-searchbar isNavigator="{{true}}">
+</w-searchbar>
+<view class='nullBox'></view>
+<view class="container">
+  <w-itemview wx:for="{{items.subject_collection_items}}" wx:key="{{item.title}}" item="{{item}}" detailsUrl="/pages/details/details?type={{type}}&id={{item.id}}"></w-itemview>
+</view>

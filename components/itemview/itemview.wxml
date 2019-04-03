@@ -1,0 +1,6 @@
+<navigator wx:if="{{item}}" class="item" url="{{detailsUrl}}">
+  <image class="item-img" src='{{item.cover.url}}'></image>
+  <view class="title">{{item.title}}</view>
+  <w-score rate="{{item.rating.value}}"></w-score>
+</navigator>
+<view wx:else class="item"></view>

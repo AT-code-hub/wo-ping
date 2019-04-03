@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "w-comment": "/components/comments/index"
+  }
+}

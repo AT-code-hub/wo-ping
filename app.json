@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/list/list",
+    "pages/details/details",
+    "pages/comment/comment"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3385ff",
+    "navigationBarTitleText": "窝评",
+    "navigationBarTextStyle": "white"
+  }
+}

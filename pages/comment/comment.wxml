@@ -1,0 +1,15 @@
+<view class="wrapper">
+  <view class="item-group" bindtap='onItemTabEven'>
+    <image src='{{imgUrl}}'></image>
+    <text class="item-title">{{title}}</text>
+    <text class="item-score">{{score}}分</text>
+  </view>
+  <view class="score-title">全部影评（{{commentList.data.total}}）</view>
+  <view class="comment-wrapper">
+    <w-comment comList="{{commentList.data.interests}}"></w-comment>
+  </view>
+  <view class="btn-box">
+    <button bindtap='onPrePage' disabled='{{disabledIs}}' loading='{{preLoading}}'>上一页</button>
+    <button bindtap='onNextPage'disabled='{{disabledIs}}' loading='{{nextLoading}}'>下一页</button>
+  </view>
+</view>

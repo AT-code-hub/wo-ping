@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-searchbar": "/components/search/index",
+    "w-indexModel": "/components/indexModel/index"
+  }
+}

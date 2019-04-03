@@ -1,0 +1,45 @@
+.comment-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+
+.comment-group .left-comment {
+  width: 70rpx;
+  margin-right: 25rpx;
+}
+
+.comment-group .left-comment image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+
+.comment-group .right-comment {
+  flex: 1;
+}
+
+.right-comment .user-rate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.right-comment .user-rate .username {
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+}
+
+.right-comment .user-rate .release-time {
+  display: block;
+  flex: 1;
+  margin: 20rpx 0;
+  font-size: 32rpx;
+  color: #999;
+}
+
+.right-comment .user-rate .content {
+  margin: 0 0 20rpx;
+  font-size: 30rpx;
+}

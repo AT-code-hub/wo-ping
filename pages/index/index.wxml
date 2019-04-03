@@ -1,0 +1,6 @@
+<w-searchbar isNavigator="{{true}}">
+</w-searchbar>
+<view class='nullBox'></view>
+<w-indexModel items="{{movies.subject_collection_items}}" title="{{movies.subject_collection.name}}" moreUrl="/pages/list/list?type=movie" types="movie"></w-indexModel>
+<w-indexModel items="{{tvs.subject_collection_items}}" title="{{tvs.subject_collection.name}}" moreUrl="/pages/list/list?type=tv" types="tv"></w-indexModel>
+<w-indexModel items="{{tv_variety.subject_collection_items}}" title="{{tv_variety.subject_collection.name}}" moreUrl="/pages/list/list?type=tv_variety" types="tv_variety"></w-indexModel>

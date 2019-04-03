@@ -1,0 +1,16 @@
+<view class="comment-group" wx:for="{{comList}}" wx:key="item.comment">
+  <view class="left-comment">
+    <image src='{{item.user.avatar}}'></image>
+  </view>
+  <view class="right-comment">
+    <view class="user-rate">
+      <text class="username">{{item.user.name}}</text>
+      <w-score rate="{{item.rating.value*2}}" statsSize="30" fontSize="28" scoreColor="#595959" isText="{{false}}"></w-score>
+      <view class="release-time">
+        {{item.create_time}}</view>
+      <view class="content">
+        {{item.comment}}
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<view class="score-box">
+  <image style='width:{{statsSize}}rpx;height:{{statsSize}}rpx;' src='/images/start.png' wx:for="{{lights}}" wx:key="{{lightss}}"></image>
+  <image style='width:{{statsSize}}rpx;height:{{statsSize}}rpx;' src='/images/b-start.png' wx:for="{{halfs}}" wx:key="{{halfss}}"></image>
+  <image style='width:{{statsSize}}rpx;height:{{statsSize}}rpx;' src='/images/no-start.png' wx:for="{{garys}}" wx:key="{{garyss}}"></image>
+  <text style='color:{{scoreColor}};font-size:{{fontSize}}rpx;' wx:if="{{isText}}">{{rateText}}</text>
+</view>
