@@ -1,1 +1,20 @@
-<w-searchbar></w-searchbar>
+<w-searchbar bindsearchInput="onSearchInput"></w-searchbar>
+<view class='nullBox'></view>
+<view class="history" wx:if="{{historys && !subject}}">
+  <view class="history-title">
+    <view>历史记录</view>
+    <view bindtap="clear">清除</view>
+  </view>
+  <navigator class="history-group" wx:for="{{historys}}" wx:key="{{item.id}}" url="/pages/details/details?type=movie&id={{item.id}}">
+    {{item.title}}
+  </navigator>
+</view>
+<view class="item-list">
+  <view class="item" wx:for="{{subject}}" wx:key="ind" bindtap='onItemTap' data-id="{{item.id}}" data-title="{{item.title}}">
+    <image src="{{item.pic.normal}}"></image>
+    <view class="item-info">
+      <view class="item-title">{{item.title}}</view>
+      <view class="comment-year">{{item.rating.value}}分/{{item.year}}</view>
+    </view>
+  </view>
+</view>

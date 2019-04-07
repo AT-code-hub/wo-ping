@@ -6,7 +6,10 @@ Component({
   properties: {
     rate: {
       type: Number,
-      value: 0
+      value: 0,
+      observer(newVal, oldVal, changePath) {
+        this.getRate();
+      }
     },
     statsSize: {
       type: Number,
@@ -37,11 +40,7 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
-  },
-  lifetimes: {
-    attached() {
-      // 在组件实例进入页面节点树时执行
+    getRate() {
       let that = this;
       let rate = that.properties.rate;
       let intRate = parseInt(rate);
@@ -70,6 +69,12 @@ Component({
         garys: garys,
         rateText: rateText
       })
+    }
+  },
+  lifetimes: {
+    attached() {
+      // 在组件实例进入页面节点树时执行
+      this.getRate();
     }
   }
 })

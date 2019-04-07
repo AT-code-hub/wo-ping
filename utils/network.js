@@ -64,6 +64,7 @@ const netWork = {
       }
     })
   },
+  // 获取
   getItemTags(params) {
     let type = params.type;
     let id = params.id;
@@ -86,6 +87,7 @@ const netWork = {
     })
 
   },
+  // 获取评论
   getItemComment(params) {
     let type = params.type;
     let id = params.id,
@@ -104,6 +106,19 @@ const netWork = {
       success(res) {
         if (params && params.success) {
           // console.log(res)
+          params.success(res)
+        }
+      }
+    })
+  },
+  // 获取搜索列表
+  getSearch: (params) => {
+    let q = params.q,
+      url = globalUrl.searchUrl(q);
+    wx.request({
+      url: url,
+      success: (res) => {
+        if (params && params.success) {
           params.success(res)
         }
       }

@@ -3,7 +3,7 @@
   <view class="details">
     <view class="left-details">
       <view class="details-rate">
-        <w-score rate="5" statsSize="35" fontSize="28" scoreColor="#595959"></w-score>
+        <w-score rate="{{item.rating.value}}" statsSize="35" fontSize="28" scoreColor="#595959"></w-score>
         <text class="comment-persons">{{item.rating.count}}人评价</text>
       </view>
       <view class="del-sub-rate">

@@ -1,3 +1,4 @@
+
 <w-searchbar isNavigator="{{true}}">
 </w-searchbar>
 <view class='nullBox'></view>
